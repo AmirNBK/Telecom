@@ -3,7 +3,7 @@
 </script>
 
 <div
-    class="SideBar w-3/12 text-white bg-white mb-8 rounded-md"
+    class="SideBar w-full text-white bg-white mb-8 rounded-md"
     style="box-shadow: 0px 0px 16px -5px #000000;"
 >
     <div

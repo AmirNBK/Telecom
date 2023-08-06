@@ -5,7 +5,7 @@
 </script>
 
 <div
-    class="Footer text-white flex flex-row justify-around pt-6 flex-wrap"
+    class="Footer text-white flex flex-row justify-around pt-6 flex-wrap mt-10"
     style="background-color: #064973;"
 >
     <div class="Footer__leftside gap-4 flex flex-col">
