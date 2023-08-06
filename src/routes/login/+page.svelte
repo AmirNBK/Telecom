@@ -9,6 +9,7 @@
     import product1 from "../../assets/image/product1.jpeg";
     import ContactUs from "../../components/ContactUs/ContactUs.svelte";
     import ItemSwitcher from "../../components/ItemSwitcher/ItemSwitcher.svelte";
+    import Login from "../../components/Login/Login.svelte";
     const products = [
         {
             brand: "Microwava",
@@ -67,7 +68,7 @@
             <Tags />
         </div>
         <div style="flex : 2.5;">
-            
+            <Login />
             <div class="mt-14">
                 <ItemSwitcher items={["New products", "LTE"]} />
                 <div class="grid grid-cols-3 gap-8 mt-6">
