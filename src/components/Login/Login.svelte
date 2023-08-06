@@ -17,7 +17,7 @@
     >
         Login
     </h2>
-    <img src={image} alt="image" class="ml-4 rounded-md mt-4 w-8/12" />
+    <img src={image} alt="image" class="ml-4 rounded-md mt-4 w-11/12 md:w-8/12" />
 
     <div class="LoginContainer__infos ml-4 mt-8">
         <p class="text-3xl">03054886</p>
@@ -27,7 +27,7 @@
             <LoginInputs text="Name" icon={user} />
             <LoginInputs text="Your phone" icon={phone} />
             <LoginInputs text="Your email address" icon={email} />
-            <div class="flex items-baseline gap-32">
+            <div class="flex flex-col md:flex-row items-baseline gap-6 md:gap-32">
                 <LoginInputs text="comment" icon={chat} />
                 <button
                     class="rounded-md py-2 px-6 w-fit text-sm mt-2 text-white"
