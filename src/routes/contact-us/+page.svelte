@@ -8,6 +8,7 @@
     import Tags from "../../components/Tags/Tags.svelte";
     import product1 from "../../assets/image/product1.jpeg";
     import ContactUs from "../../components/ContactUs/ContactUs.svelte";
+    import ItemSwitcher from "../../components/ItemSwitcher/ItemSwitcher.svelte";
     const products = [
         {
             brand: "Microwava",
@@ -67,16 +68,19 @@
         </div>
         <div style="flex : 2.5;">
             <ContactUs />
-            <div class="grid grid-cols-3 gap-8 mt-14">
-                {#each products as product}
-                    <Product
-                        brand={product.brand}
-                        name={product.name}
-                        description={product.description}
-                        price={product.price}
-                        image={product.image}
-                    />
-                {/each}
+            <div class="mt-14">
+                <ItemSwitcher items={["New products", "LTE"]} />
+                <div class="grid grid-cols-3 gap-8 mt-6">
+                    {#each products as product}
+                        <Product
+                            brand={product.brand}
+                            name={product.name}
+                            description={product.description}
+                            price={product.price}
+                            image={product.image}
+                        />
+                    {/each}
+                </div>
             </div>
         </div>
     </div>

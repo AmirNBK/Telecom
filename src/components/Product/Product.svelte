@@ -10,6 +10,8 @@
     .Product {
         border: 1px solid #0E3552;
         width: 250px;
+        height: 380px;
+        justify-content: space-between;
     }
 
     .Product h2 {
@@ -45,7 +47,7 @@
     }
 </style>
 
-<div class="Product flex flex-col w-fit rounded-md py-3 gap-y-16 mx-auto">
+<div class="Product flex flex-col w-fit rounded-md py-3 justifty-between mx-auto">
     <div class="flex flex-col items-center gap-y-2">
         <h2 class="font-medium" style="color: #DC0600;">{brand}</h2>
         <img class="rounded-md rounded-2xl" src={image} alt="product" />
