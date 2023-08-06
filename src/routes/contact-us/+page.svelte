@@ -9,6 +9,7 @@
     import product1 from "../../assets/image/product1.jpeg";
     import ContactUs from "../../components/ContactUs/ContactUs.svelte";
     import ItemSwitcher from "../../components/ItemSwitcher/ItemSwitcher.svelte";
+    import logo from '../../assets/icons/logo.svg'
     const products = [
         {
             brand: "Microwava",
@@ -60,8 +61,11 @@
 
 <div>
     <Header />
+    <a href="/">
+        <img src={logo} alt="logo" class="mx-auto mt-8 block sm:hidden w-28 md:w-52 rounded-md" style="background-color: #9C1511;"/>
+    </a>
     <HeroSection />
-    <div class="flex flex-row gap-10 mx-auto" style="width: 90%;">
+    <div class="flex lg:flex-row flex-col gap-10 mx-auto" style="width: 90%;">
         <div class="flex flex-col" style="flex : 1">
             <SideBar />
             <Tags />
@@ -70,7 +74,7 @@
             <ContactUs />
             <div class="mt-14">
                 <ItemSwitcher items={["New products", "LTE"]} />
-                <div class="grid grid-cols-3 gap-8 mt-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6">
                     {#each products as product}
                         <Product
                             brand={product.brand}
