@@ -11,12 +11,18 @@
 </script>
 
 <div
-    class="Header flex flex-row justify-center gap-10 py-4"
+    class="Header flex flex-row justify-center gap-10 py-4 flex-wrap"
     style="box-shadow:rgb(0, 0, 0) 0px 0px 10px -5px"
 >
-    {#each headerItems as items, index}
-        <div>
-            {items}
-        </div>
+    {#each headerItems as item, index}
+        {#if item === "Login" || item === "Register"}
+            <a href="/login" class="cursor-pointer">
+                {item}
+            </a>
+        {:else}
+            <div>
+                {item}
+            </div>
+        {/if}
     {/each}
 </div>

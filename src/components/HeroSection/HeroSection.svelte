@@ -10,7 +10,9 @@
     style="width: 90%;height: 500px;"
 >
     <img src={HeroSectionImage} alt="image" class="w-full absolute" style="height: 500px;" />
-    <img src={logo} alt="logo" class="absolute w-52"/>
+    <a href="/">
+        <img src={logo} alt="logo" class="absolute hidden sm:block w-28 md:w-52"/>
+    </a>
     <div class="flex flex-row justify-end pt-6 mr-6 absolute right-0">
         <SearchInput placeholder="Search store" />
         <button

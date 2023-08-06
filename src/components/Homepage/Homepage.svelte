@@ -43,7 +43,7 @@
 
     <div class="my-6">
         <HeadlineComponent title="Featured products" />
-        <div class="grid grid-cols-3 gap-8 mt-6">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-6">
             {#each featuredProducts as product}
                 <FeaturedProducts
                     name={product.name}
