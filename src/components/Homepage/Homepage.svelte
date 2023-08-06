@@ -3,6 +3,7 @@
     import FeaturedProducts from "../FeaturedProducts/FeaturedProducts.svelte";
     import HeadlineComponent from "../HeadlineComponent/HeadlineComponent.svelte";
     import imageProduct from "../../assets/image/featuredProduct1.jpeg";
+    import News from "../News/News.svelte";
 
     const featuredProducts = [
         {
@@ -51,5 +52,10 @@
                 />
             {/each}
         </div>
+    </div>
+
+    <div class="my-6 flex flex-col gap-6">
+        <HeadlineComponent title="News" />
+        <News />
     </div>
 </div>
