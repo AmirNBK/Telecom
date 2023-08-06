@@ -5,7 +5,7 @@
 </script>
 
 <div
-    class="Footer text-white flex flex-row justify-around py-6 flex-wrap"
+    class="Footer text-white flex flex-row justify-around pt-6 flex-wrap"
     style="background-color: #064973;"
 >
     <div class="Footer__leftside gap-4 flex flex-col">
@@ -74,5 +74,9 @@
                 <img src={wifi} class="w-8 h-8" alt="Social Media Icons" style="transform: translateY(-2px);" />
             </div>
         </div>
+    </div>
+
+    <div class="w-full h-14 mt-6" style="background-color: #0E3552;">
+
     </div>
 </div>

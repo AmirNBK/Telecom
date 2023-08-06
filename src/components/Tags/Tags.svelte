@@ -1,4 +1,4 @@
-<div class="tags ml-16 w-3/12 px-2 py-2 rounded-md mb-6" style="border: 1px solid gray;">
+<div class="tags w-3/12 px-2 py-2 rounded-md mb-6" style="border: 1px solid gray;">
     <div class="tags__title w-full font-medium" style="border-bottom: 1px solid gray;">
         Popular tags
     </div>
