@@ -1,5 +1,6 @@
 <script>
     import "../app.css";
+    import Footer from "../components/Footer/Footer.svelte";
     import Header from "../components/Header/Header.svelte";
     import HeroSection from "../components/HeroSection/HeroSection.svelte";
     import SideBar from "../components/SideBar/SideBar.svelte";
@@ -13,4 +14,6 @@
         <SideBar />
         <Tags />
     </div>
+
+    <Footer />
 </div>
