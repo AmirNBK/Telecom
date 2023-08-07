@@ -4,11 +4,10 @@
     import wifi from "../../assets/icons/wifi.svg";
 </script>
 
-<div
-    class="Footer"
-    style="background-color: #064973;"
->
-    <div class="px-6 text-white flex flex-row justify-around pt-6 flex-wrap mt-10 gap-12 md:gap-2">
+<div class="Footer" style="background-color: #064973;">
+    <div
+        class="px-6 text-white flex flex-row justify-around pt-6 flex-wrap mt-10 gap-12 md:gap-2"
+    >
         <div class="Footer__leftside gap-4 flex flex-col">
             <div class="Footer__leftside_info">
                 <h4 class="text-2xl mb-1">Information</h4>
@@ -16,7 +15,7 @@
                 <p>shipping&retums</p>
                 <p>Privacy Notice</p>
                 <p>Conditions</p>
-                <p>About us</p>
+                <a href="/about-us"> About us </a> <br/>
                 <a href="/contact-us">contact us</a>
             </div>
             <div class="Footer__leftside__account">
