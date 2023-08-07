@@ -1,7 +1,10 @@
 <script>
+    import Modal from "../Modal/Modal.svelte";
+
     export let name;
     export let description;
     export let image;
+    let showModal = false;
 </script>
 
 <style>
@@ -52,6 +55,36 @@
     </div>
 
     <div class="flex flex-col items-center">
-        <button class="rounded-b-2xl py-3 px-6 w-full text-sm mt-2 text-lg" style="text-decoration : underline">Request Only</button>
+        <button 
+        on:click={() => (showModal = true)}
+        class="rounded-b-2xl py-3 px-6 w-full text-sm mt-2 text-lg" style="text-decoration : underline">Request Only</button>
     </div>
+
+    <Modal bind:showModal>
+        <h2 slot="header">Please enter your information</h2>
+
+        <ol class="definition-list">
+            <li class="text-center mt-4">
+                <input
+                    class="w-6/12 py-2 px-4 rounded-md"
+                    style="border: 1px solid gray;"
+                    placeholder="enter your name"
+                />
+            </li>
+            <li class="text-center mt-4">
+                <input
+                    class="w-6/12 py-2 px-4 rounded-md"
+                    style="border: 1px solid gray;"
+                    placeholder="enter your email"
+                />
+            </li>
+
+            <li class="text-center mt-4">
+                <button
+                    class="rounded-md py-2 px-6 w-fit text-sm mt-2 text-white"
+                    style="background-color: #9C1511;">Add to cart</button
+                >
+            </li>
+        </ol>
+    </Modal>
 </div>
