@@ -1,7 +1,5 @@
 <script>
     const headerItems = [
-        "Register",
-        "Login",
         "Shopping cart(0)",
         "compare product list",
         "wishlist",
