@@ -1,16 +1,17 @@
-<script lang="ts">
+<script>
     import "../../app.css";
     import Footer from "../../components/Footer/Footer.svelte";
     import Header from "../../components/Header/Header.svelte";
     import HeroSection from "../../components/HeroSection/HeroSection.svelte";
     import Product from "../../components/Products/Product.svelte";
+    import SideBar from "../../components/SideBar/SideBar.svelte";
     import Tags from "../../components/Tags/Tags.svelte";
     import product1 from "../../assets/image/product1.jpeg";
     import ContactUs from "../../components/ContactUs/ContactUs.svelte";
     import ItemSwitcher from "../../components/ItemSwitcher/ItemSwitcher.svelte";
     import logo from "../../assets/icons/logo.svg";
-    import AboutUs from "../../components/AboutUs/AboutUs.svelte";
-    import SideBar from "../../components/SideBar/SideBar.svelte";
+    import HeadlineComponent from "../../components/HeadlineComponent/HeadlineComponent.svelte";
+    import News from "../../components/News/News.svelte";
     const products = [
         {
             brand: "Microwava",
@@ -77,21 +78,10 @@
             <Tags />
         </div>
         <div style="flex : 2.5;">
-            <AboutUs />
-            <div class="mt-14">
-                <ItemSwitcher items={["New products", "LTE"]} />
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-6"
-                >
-                    {#each products as product}
-                        <Product
-                            brand={product.brand}
-                            name={product.name}
-                            description={product.description}
-                            price={product.price}
-                            image={product.image}
-                        />
-                    {/each}
+            <div class="">
+                <div class="mb-6 flex flex-col gap-6">
+                    <HeadlineComponent title="News" />
+                    <News />
                 </div>
             </div>
         </div>

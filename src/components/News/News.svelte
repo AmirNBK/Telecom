@@ -19,10 +19,12 @@
         description="what Does SFP Compatibility Mean? & Main Concerns for Buying Compatible Optical Transceiver"
     />
 
-    <div class="text-end my-3">
-        <button
-            class="rounded-md py-2 px-6 w-fit text-sm mt-2 text-white"
-            style="background-color: #9C1511;">view News Archive</button
-        >
-    </div>
+    <a href="/news">
+        <div class="text-end my-3">
+            <button
+                class="rounded-md py-2 px-6 w-fit text-sm mt-2 text-white"
+                style="background-color: #9C1511;">view News Archive</button
+            >
+        </div>
+    </a>
 </div>

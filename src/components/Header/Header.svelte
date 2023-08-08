@@ -1,10 +1,10 @@
 <script>
     const headerItems = [
-        "Shopping cart(0)",
-        "compare product list",
-        "wishlist",
-        "Us dollar",
-        "English",
+        { text: "Home", url: "/" },
+        { text: "Products", url: "/products" },
+        { text: "Contact us", url: "/contact-us" },
+        { text: "About us", url: "/about-us" },
+        { text: "English", url: "#" },
     ];
 </script>
 
@@ -13,14 +13,14 @@
     style="box-shadow:rgb(0, 0, 0) 0px 0px 10px -5px"
 >
     {#each headerItems as item, index}
-        {#if item === "Login" || item === "Register"}
-            <a href="/login" class="cursor-pointer">
-                {item}
+        {#if item.text === "Login" || item.text === "Register"}
+            <a href={item.url} class="cursor-pointer">
+                {item.text}
             </a>
         {:else}
-            <div>
-                {item}
-            </div>
+            <a href={item.url} class="cursor-pointer">
+                {item.text}
+            </a>
         {/if}
     {/each}
 </div>
