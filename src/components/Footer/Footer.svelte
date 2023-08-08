@@ -11,40 +11,28 @@
         <div class="Footer__leftside gap-4 flex flex-col">
             <div class="Footer__leftside_info">
                 <h4 class="text-2xl mb-1">Information</h4>
-                <p>sitemap</p>
-                <p>shipping&retums</p>
-                <p>Privacy Notice</p>
-                <p>Conditions</p>
+                <a href="/">Home</a> <br/>
+                <a href="/products">Products</a> <br/>
                 <a href="/about-us"> About us </a> <br/>
-                <a href="/contact-us">contact us</a>
-            </div>
-            <div class="Footer__leftside__account">
-                <h4 class="text-2xl mb-1">My account</h4>
-                <p>My account</p>
-                <p>Shopping cart</p>
-                <p>Wishlist</p>
+                <a href="/contact-us">Contact us</a>
             </div>
         </div>
 
         <div class="Footer__centerside">
             <div class="Footer__centerside__company">
                 <h4 class="text-2xl mb-1">Company</h4>
-                <p>our team</p>
-                <p>Product technology</p>
-                <p>Product Quality</p>
-                <p>Product Logistics</p>
+                <a href="/about-us">Our team</a>
+                <br/>
+                <a href="contact-us">Contact us</a>
             </div>
         </div>
 
         <div class="Footer__rightside">
             <div class="Footer__rightside__service">
                 <h4 class="text-2xl mb-1">Customer service</h4>
-                <p>search</p>
-                <p>News</p>
-                <p>Blog</p>
-                <p>Recently viewed product</p>
-                <p>compare Products list</p>
-                <p>New product</p>
+                <a href="/">Home</a> <br/>
+                <a href="/news">News</a> <br/>
+                <a href="/products">Products</a> 
             </div>
         </div>
 
